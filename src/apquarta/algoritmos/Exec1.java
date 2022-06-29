@@ -43,7 +43,7 @@ public class Exec1 {
         System.out.println("\n---Impressão---\n");
         for (int i = 0; i < nAlunos; i++) {
             System.out.println("Aluno " + (i + 1) + ": " + nomes[i]);
-            for (int j = 0; j < nNotas-1; j++) {
+            for (int j = 0; j < nNotas; j++) {
                 System.out.println(" - Nota " + (j + 1) + ": " + notas[i][j]);
             }
             System.out.println(" - Média :" + notas[i][nNotas]);
