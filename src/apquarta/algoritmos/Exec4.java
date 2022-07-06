@@ -27,7 +27,7 @@ public class Exec4 {
         }
         System.out.println("\n--- Valores ---");
         for (int i = 0; i < 10; i++) {
-            System.out.printf("|%5d%3s%7d |\n", valores[i][0], " | ", valores[i][1]);
+            System.out.printf("|%3d%3s%3d |\n", valores[i][0], " | ", valores[i][1]);
         }
     }
 }
