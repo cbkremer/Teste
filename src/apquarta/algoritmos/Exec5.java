@@ -20,8 +20,22 @@ public class Exec5 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         int[][] valores = new int[10][2];
+        System.out.println("--- Entre com 10 números inteiros: ---");
         for (int i = 0; i < 10; i++) {
-            
+            System.out.println("Entre com o " + (i + 1) + "º número: ");
+            int valor = leia.nextInt();
+            if (valor % 2 == 0) {
+                //par
+                valores[i][0] = valor;
+                valores[i][1] = 0;//impar
+            } else {
+                //impar
+                valores[i][0] = 0;
+                valores[i][1] = valor;//impar
+            }
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println(valores[i][0] + " | " + valores[i][1]);
         }
     }
 }
