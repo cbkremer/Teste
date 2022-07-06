@@ -34,8 +34,9 @@ public class Exec5 {
                 valores[i][1] = valor;//impar
             }
         }
+        System.out.println("\n --- Lista de valores: ---");
         for (int i = 0; i < 10; i++) {
-            System.out.println(valores[i][0] + " | " + valores[i][1]);
+            System.out.printf("|%3d%3s%3d |\n",valores[i][0], " | ", valores[i][1]);
         }
     }
 }
